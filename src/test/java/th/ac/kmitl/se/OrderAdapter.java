@@ -73,14 +73,14 @@ public class OrderAdapter extends ExecutionContext {
 
     @Edge()
     public void pay() {
-        Card card = new Card("123", "Anirudh", 12, 30);
+        Card card = new Card("123", "Chicken", 12, 30);
         order.pay(card);
         System.out.println("Edge pay");
     }
 
     @Edge()
     public void retryPay() {
-        Card card = new Card("123", "Anirudh", 12, 30);
+        Card card = new Card("123", "Chicken", 12, 30);
         order.pay(card);
         System.out.println("Edge retryPay");
     }
